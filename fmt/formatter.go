@@ -34,7 +34,6 @@ func (this *Person) Format(f fmt.State, c rune) {
 		// 没有此句，会导致 fmt.Printf("%s", p) 啥也不输出
 		f.Write([]byte(fmt.Sprintln(this.String())))
 	}
-
 }
 
 func main() {
