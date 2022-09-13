@@ -10,7 +10,7 @@ import (
 func main() {
 	readers := []io.Reader{
 		strings.NewReader("from strings reader"),
-		bytes.NewBufferString("from bytes buffer"),
+		bytes.NewBufferString(" from bytes buffer"),
 	}
 	reader := io.MultiReader(readers...)
 	data := make([]byte, 0, 1024)
